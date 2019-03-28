@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.WebJobs.Host.Config;
+﻿using System;
+using Microsoft.Azure.WebJobs.Host.Config;
 
 namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
 {
@@ -6,15 +7,9 @@ namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
     {
         public void Initialize(ExtensionConfigContext context)
         {
-            context.AddBindingRule<FromConfigAttribute>().BindToInput(GetString);
-            context.AddBindingRule<IntFromConfigAttribute>().BindToInput(GetInt);
+            context.AddBindingRule<FromConfigAttribute>().BindToInput(attr => attr.Name);
+            context.AddBindingRule<IntFromConfigAttribute>().BindToInput(att => int.Parse(att.Name));
+            context.AddBindingRule<UriFromConfigAttribute>().BindToInput(attr => new Uri(attr.Name));
         }
-
-        private static string GetString(FromConfigAttribute attribute)
-            => attribute.Name;
-
-        private static int GetInt(IntFromConfigAttribute attribute)
-            => int.Parse(attribute.Name);
-
     }
 }
