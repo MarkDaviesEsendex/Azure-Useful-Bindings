@@ -30,4 +30,15 @@ public static class Function
 }
 ```
 
-Easy to use, it will take the setting name and bind it to a string value, I may extend this in future to do more types i.e. IntFromConfig, UriFromConfig, if there is enough interest.
+```
+public static class Function
+{
+    [FunctionName("Function")]
+    public static void Run([IntFromConfig(Name = "ConfigSettingName")] int configValue)
+    {
+    }
+}
+```
+
+Easy to use, it will take the setting name and bind it to a string value, I may extend this in future to do more types i.e. UriFromConfig, if there is enough interest.
+
