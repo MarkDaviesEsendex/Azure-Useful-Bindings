@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigBindings", "ConfigBindings\ConfigBindings.csproj", "{EAD3DB02-1907-4E4F-9A54-84D4FBF381FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAD3DB02-1907-4E4F-9A54-84D4FBF381FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD3DB02-1907-4E4F-9A54-84D4FBF381FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD3DB02-1907-4E4F-9A54-84D4FBF381FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD3DB02-1907-4E4F-9A54-84D4FBF381FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ABB14D7-BD8B-46E3-A84B-2296EBE0B57F}
+	EndGlobalSection
+EndGlobal
