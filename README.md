@@ -4,13 +4,7 @@ A repository of useful bindings - maybe
 # What is this
 Hopefully a collection of useful bindings for Azure functions
 
-[![Build status](https://dev.azure.com/markdaviesesendex/AzureThings/_apis/build/status/AzureThings-ASP.NET%20Core-CI)](https://dev.azure.com/markdaviesesendex/AzureThings/_build/latest?definitionId=2)
-
-![](https://img.shields.io/github/last-commit/MarkDaviesEsendex/Azure-Useful-Bindings.svg)
-
-[![](https://img.shields.io/nuget/v/Bindings.Azure.WebJobs.Extensions.UsefulBindings.svg)](https://www.nuget.org/packages/Bindings.Azure.WebJobs.Extensions.UsefulBindings/)
-
-[![](https://img.shields.io/nuget/dt/Bindings.Azure.WebJobs.Extensions.UsefulBindings.svg)](https://www.nuget.org/packages/Bindings.Azure.WebJobs.Extensions.UsefulBindings/)
+[![Build status](https://dev.azure.com/markdaviesesendex/AzureThings/_apis/build/status/AzureThings-ASP.NET%20Core-CI)](https://dev.azure.com/markdaviesesendex/AzureThings/_build/latest?definitionId=2) ![](https://img.shields.io/github/last-commit/MarkDaviesEsendex/Azure-Useful-Bindings.svg) [![](https://img.shields.io/nuget/v/Bindings.Azure.WebJobs.Extensions.UsefulBindings.svg)](https://www.nuget.org/packages/Bindings.Azure.WebJobs.Extensions.UsefulBindings/) [![](https://img.shields.io/nuget/dt/Bindings.Azure.WebJobs.Extensions.UsefulBindings.svg)](https://www.nuget.org/packages/Bindings.Azure.WebJobs.Extensions.UsefulBindings/)
 
 
 ## Bindings
