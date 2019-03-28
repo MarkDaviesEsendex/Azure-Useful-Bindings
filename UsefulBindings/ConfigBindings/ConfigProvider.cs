@@ -1,6 +1,6 @@
 ﻿using Microsoft.Azure.WebJobs.Host.Config;
 
-namespace Microsoft.Azure.WebJobs.Extensions.UsefulBindings
+namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
 {
     internal class ConfigProvider : IExtensionConfigProvider
     {

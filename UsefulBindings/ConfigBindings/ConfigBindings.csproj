@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Microsoft.Azure.WebJobs.Extensions.UsefulBindings</AssemblyName>
-    <RootNamespace>Microsoft.Azure.WebJobs.Extensions.UsefulBindings</RootNamespace>
+    <AssemblyName>Bindings.Azure.WebJobs.Extensions.UsefulBindings</AssemblyName>
+    <RootNamespace>Bindings.Azure.WebJobs.Extensions.UsefulBindings</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

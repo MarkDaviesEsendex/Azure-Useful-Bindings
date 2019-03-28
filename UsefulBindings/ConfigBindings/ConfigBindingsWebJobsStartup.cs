@@ -1,9 +1,10 @@
-﻿using Microsoft.Azure.WebJobs.Extensions.UsefulBindings;
+﻿using Bindings.Azure.WebJobs.Extensions.UsefulBindings;
+using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Hosting;
 
 [assembly: WebJobsStartup(typeof(ConfigBindingsWebJobsStartup))]
 
-namespace Microsoft.Azure.WebJobs.Extensions.UsefulBindings
+namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
 {
     public class ConfigBindingsWebJobsStartup : IWebJobsStartup
     {

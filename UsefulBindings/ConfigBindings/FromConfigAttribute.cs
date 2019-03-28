@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Azure.WebJobs.Description;
 
-namespace Microsoft.Azure.WebJobs.Extensions.UsefulBindings
+namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
 {
     [Binding]
     [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.ReturnValue)]
