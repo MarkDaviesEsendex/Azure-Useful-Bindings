@@ -28,7 +28,7 @@ public static class Function
 public static class Function
 {
     [FunctionName("Function")]
-    public static void Run([IntFromConfig(Name = "ConfigSettingName")] int configValue)
+    public static void Run([FromConfig(Name = "ConfigSettingName")] int configValue)
     {
     }
 }
@@ -38,7 +38,7 @@ public static class Function
 public static class Function
 {
     [FunctionName("Function")]
-    public static void Run([UriFromConfig(Name = "ConfigSettingName")] Uri configValue)
+    public static void Run([FromConfig(Name = "ConfigSettingName")] Uri configValue)
     {
     }
 }
