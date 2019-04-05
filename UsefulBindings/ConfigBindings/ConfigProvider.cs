@@ -10,6 +10,7 @@ namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
             context.AddBindingRule<FromConfigAttribute>().BindToInput(attr => attr.Name);
             context.AddBindingRule<FromConfigAttribute>().BindToInput(attr => int.Parse(attr.Name));
             context.AddBindingRule<FromConfigAttribute>().BindToInput(attr => new Uri(attr.Name));
+            context.AddBindingRule<FromConfigAttribute>().BindToInput(attr => bool.Parse(attr.Name));
             context.AddBindingRule<IntFromConfigAttribute>().BindToInput(att => int.Parse(att.Name));
             context.AddBindingRule<UriFromConfigAttribute>().BindToInput(attr => new Uri(attr.Name));
         }

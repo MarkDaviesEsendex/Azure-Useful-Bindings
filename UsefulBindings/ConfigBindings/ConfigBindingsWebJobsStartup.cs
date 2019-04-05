@@ -11,6 +11,7 @@ namespace Bindings.Azure.WebJobs.Extensions.UsefulBindings
         public void Configure(IWebJobsBuilder builder)
         {
             builder.AddExtension<ConfigProvider>();
+//            builder.Services.AddSingleton(b => new HttpClient());
         }
     }
 }

@@ -6,14 +6,13 @@ Hopefully a collection of useful bindings for Azure functions
 
 [![Build status](https://dev.azure.com/markdaviesesendex/AzureThings/_apis/build/status/AzureThings-ASP.NET%20Core-CI)](https://dev.azure.com/markdaviesesendex/AzureThings/_build/latest?definitionId=2) ![](https://img.shields.io/github/last-commit/MarkDaviesEsendex/Azure-Useful-Bindings.svg) [![](https://img.shields.io/nuget/v/Bindings.Azure.WebJobs.Extensions.UsefulBindings.svg)](https://www.nuget.org/packages/Bindings.Azure.WebJobs.Extensions.UsefulBindings/) [![](https://img.shields.io/nuget/dt/Bindings.Azure.WebJobs.Extensions.UsefulBindings.svg)](https://www.nuget.org/packages/Bindings.Azure.WebJobs.Extensions.UsefulBindings/)
 
-
 ## Bindings
-
 ### From Config
 Sometimes I just want to grab one or maybe two config settings from the `local.settings.json` but that means that I have to use `Environment.GetEnvironmentVariable` which immediately throws up alarm bells for me! It makes tests so much harder to write and a lot more secrative because somewhere in my test I now have to use `Environment.SetEnvironmentVariable` which I hate doing because it creates flakey tests - most test runners don't clear down environment variables which means that I now have to run tests syncronously. That's a massive headache just for one config value in a function!
 
 Introducing `FromConfig`
 
+**String**
 ```
 public static class Function
 {
@@ -23,7 +22,7 @@ public static class Function
     }
 }
 ```
-
+**Int**
 ```
 public static class Function
 {
@@ -33,12 +32,22 @@ public static class Function
     }
 }
 ```
-
+**Uris**
 ```
 public static class Function
 {
     [FunctionName("Function")]
     public static void Run([FromConfig(Name = "ConfigSettingName")] Uri configValue)
+    {
+    }
+}
+```
+**Bools**
+```
+public static class Function
+{
+    [FunctionName("Function")]
+    public static void Run([FromConfig(Name = "ConfigSettingName")] bool configValue)
     {
     }
 }
